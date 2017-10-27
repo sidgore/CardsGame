@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import classnames from 'classnames';
 
 export default class Card extends Component {
@@ -16,8 +16,8 @@ export default class Card extends Component {
   render() {
     var classes = classnames(
       'Card',
-      {'Card--flipped': this.props.flipped},
-      {'Card--matched': this.props.matched}
+      { 'Card--flipped': this.props.flipped },
+      { 'Card--matched': this.props.matched }
     );
     var cardValue = this.props.flipped ? this.props.value : '';
     return (

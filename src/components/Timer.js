@@ -1,24 +1,24 @@
 import React from 'react';
 
 export default class Timer extends React.Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
-    this.state = {count: 1}
+    this.state = { count: 1 }
   }
-  componentWillUnmount () {
+  componentWillUnmount() {
     clearInterval(this.timer)
   }
-  tick () {
-    this.setState({count: (this.state.count + 1)})
+  tick() {
+    this.setState({ count: (this.state.count + 1) })
   }
-  startTimer () {
+  startTimer() {
     clearInterval(this.timer)
     this.timer = setInterval(this.tick.bind(this), 1000)
   }
-  stopTimer () {
+  stopTimer() {
     clearInterval(this.timer)
   }
-  render () {
+  render() {
     return (
       <div className='timer'>
         <h1>{this.state.count}</h1>
