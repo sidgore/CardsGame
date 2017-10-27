@@ -1,0 +1,37 @@
+{value: 10, matched: false, flipped: false},
+{value: 9, matched: false, flipped: false},
+{value: 11, matched: false, flipped: false},
+{value: 9, matched: false, flipped: false},
+{value: 12, matched: false, flipped: false},
+{value: 11, matched: false, flipped: false},
+{value: 12, matched: false, flipped: false},
+{value: 10, matched: false, flipped: false},
+
+{value: 14, matched: false, flipped: false},
+{value: 16, matched: false, flipped: false},
+{value: 13, matched: false, flipped: false},
+{value: 15, matched: false, flipped: false},
+{value: 13, matched: false, flipped: false},
+{value: 16, matched: false, flipped: false},
+{value: 14, matched: false, flipped: false},
+{value: 15, matched: false, flipped: false},
+
+{value: 18, matched: false, flipped: false},
+{value: 17, matched: false, flipped: false},
+{value: 18, matched: false, flipped: false},
+{value: 17, matched: false, flipped: false}
+
+
+
+
+
+
+if({this.state.rounds} < 20) {
+  disp_msg = "you took "+{this.state.rounds}+" attempts . <br /> Your performance : Good. You can perform even better.";
+}
+else if({this.state.rounds} < 30) {
+  disp_msg = "you took "+{this.state.rounds}+" attempts . <br /> Your performance : Average. You can perform better.";
+}
+else {
+  disp_msg = "you took "+{this.state.rounds}+" attempts . <br /> Your performance : Not Good. Better Luck Next time.";
+}
